@@ -1,0 +1,111 @@
+.app {
+  height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .addHome {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+  }
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  .notes {
+    display: flex;
+    flex-wrap: wrap;
+
+    .note {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid black;
+      margin: 10px;
+      width: 300px;
+      height: auto;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+      img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      button {
+        padding: 3px 6px;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .notesButton{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .delete {
+        border: 1px solid rgb(245, 191, 191);
+        color: rgb(242, 100, 100);
+        padding: 10px;
+      }
+
+      .delete:hover{
+        background-color: brown;
+        color: black;
+        padding: 10px;
+      }
+      
+      .update {
+        border: 1px solid rgb(204, 204, 243);
+        color: rgb(139, 139, 234);
+        padding: 10px;
+      }
+
+      .update:hover{
+        background-color: blueviolet;
+        color: black;
+        padding: 10px;
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+      width: 250px;
+      padding: 10px;
+      border: 1px solid gray;
+    }
+
+    textarea {
+      padding: 10px;
+    }
+
+    button {
+      border: none;
+      padding: 10px;
+      background-color: white;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
